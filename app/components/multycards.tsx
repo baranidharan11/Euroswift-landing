@@ -60,26 +60,27 @@ function Multycards() {
         "Germany is known for its top-notch public services, including transportation, healthcare, and education.",
     },
   ];
-  return (
-    <div className="flex flex-col items-center space-y-3 sm:space-y-4 mx-3 sm:ml-10 sm:mr-0 w-full mt-10 text-center sm:text-left">
-      <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
-        The Medicruiter Program
-      </h2>
 
-      <p className="text-sm sm:text-lg text-gray-700 max-w-lg">
-        The free All-in-One-Program is your guide to a better life in Germany.
-        We find a perfect Job-Match and provide everything you need to get
-        there.
-      </p>
+  return (
+    <div className="flex flex-col items-center">
+      <h2 className="font-title text-bluedark text-3xl font-black mb-8 mt-6 text-center">
+        The Medicruiter Program
+        <br />
+        <span className="text-2xl font-body">
+          The free All-in-One-Program is your guide to a better life in Germany.
+          We find a perfect Job-Match and provide everything you need to get
+          there.
+        </span>
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-items-center">
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="rounded overflow-hidden bg-blue-100 p-4 max-w-full sm:max-w-xs mb-4"
+            className="rounded overflow-hidden bg-blue-100 p-4 max-w-xs mx-auto"
           >
             <div className="px-2 pt-2 pb-2">
-              <div className="rounded overflow-hidden bg-blue-100 p-4 max-w-xs mx-auto">
+              <div className="flex items-center mb-3">
                 <div className="mr-1 shrink-0">
                   <img
                     loading="lazy"
@@ -87,25 +88,26 @@ function Multycards() {
                     alt={card.title}
                     width="60"
                     height="60"
-                    className="w-12 h-12 sm:w-14 sm:h-14"
+                    className="w-14 h-14"
                   />
                 </div>
-                <div className="font-title text-lg sm:text-xl font-bold">
+                <div className="font-title text-xl lg:text-lg font-bold">
                   {card.title}
                 </div>
               </div>
               <div>
-                <p className="text-xs sm:text-base">{card.description}</p>
+                <p className="text-sm lg:text-base">{card.description}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="w-full">
+      <div className="w-full mt-6">
         <Twobutton />
       </div>
     </div>
   );
 }
+
 export default Multycards;
