@@ -61,7 +61,7 @@ function Multycards() {
     },
   ];
   return (
-    <div className="flex flex-col items-center space-y-3 sm:space-y-4 ml-0 sm:ml-10 w-full mt-10 text-center sm:text-left">
+    <div className="flex flex-col items-center space-y-3 sm:space-y-4 mx-3 sm:ml-10 sm:mr-0 w-full mt-10 text-center sm:text-left">
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
         The Medicruiter Program
       </h2>
@@ -72,14 +72,14 @@ function Multycards() {
         there.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 justify-items-center w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 justify-items-center">
         {cardsData.map((card, index) => (
           <div
             key={index}
-            className="rounded overflow-hidden bg-blue-100 p-4 max-w-full sm:max-w-xs"
+            className="rounded overflow-hidden bg-blue-100 p-4 max-w-full sm:max-w-xs mb-4"
           >
             <div className="px-2 pt-2 pb-2">
-              <div className="flex items-center mb-3">
+              <div className="rounded overflow-hidden bg-blue-100 p-4 max-w-xs mx-auto">
                 <div className="mr-1 shrink-0">
                   <img
                     loading="lazy"
