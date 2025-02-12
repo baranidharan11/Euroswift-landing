@@ -16,7 +16,7 @@ function Navbar() {
       </video>
 
       <h1
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-title text-9xl sm:text-5xl lg:text-5xl text-white font-black mb-5 break-normal"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-title text-1xl  sm:text-1xl  lg:text-5xl text-white font-black mb-5 break-normal"
         style={{ textShadow: "0px 5px 20px rgba(0, 0, 0, 0.2)" }}
       >
         Work as a nurse in Germany
@@ -39,7 +39,7 @@ function Navbar() {
           </nav>
         </div>
         <div className="menu">
-          <button className="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 mr-4">
+          <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-2 rounded-lg shadow-md hover:from-white-500 hover:to-white-600 transition-all duration-300 font-semibold tracking-wide  border-yellow-600">
             Contact Us
           </button>
         </div>

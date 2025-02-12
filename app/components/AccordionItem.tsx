@@ -1,8 +1,7 @@
-"use client"; // Add this line to indicate that this is a Client Component
+"use client";
 
 import React, { useState } from "react";
 
-// Define the props interface
 interface AccordionItemProps {
   question: string;
   answer: string;
