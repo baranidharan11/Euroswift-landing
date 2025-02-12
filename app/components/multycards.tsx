@@ -66,7 +66,7 @@ function Multycards() {
       <h2 className="font-title text-bluedark text-3xl font-black mb-8 mt-6 text-center">
         The Medicruiter Program
         <br />
-        <span className="text-2xl font-body">
+        <span className="text-1xl font-body">
           The free All-in-One-Program is your guide to a better life in Germany.
           We find a perfect Job-Match and provide everything you need to get
           there.
