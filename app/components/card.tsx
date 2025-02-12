@@ -27,7 +27,7 @@ function CardContainer() {
 
   return (
     <div className="flex flex-col items-center">
-      <h2 className="font-title text-bluedark text-4xl font-black mb-8 text-center">
+      <h2 className="font-title text-bluedark text-3xl font-black mb-8 mt-6 text-center">
         A better life in Germany
         <br />
         <span className="text-2xl font-body">
