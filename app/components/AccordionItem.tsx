@@ -9,7 +9,6 @@ interface AccordionItemProps {
 
 const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="accordion-item">
       <button
